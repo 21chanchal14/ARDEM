@@ -1,1 +1,4 @@
-# ARDEM
+•	The code loops through each PDF file in the input directory, processes each page in the PDF, and converts each page into a high-resolution image (PNG format).
+•	The images are saved in the output directory with the same base name as the PDF, but with a page number appended. This code processes a list of images, detects tables in each image (using   a detect_tables function), draws red rectangles around the tables, and saves the modified images to a s pecified output directory. Each processed image is saved with a new name indicating that it has been "highlighted."
+•	 The code processes images (specifically PNG files) of tables extracted from PDFs, detects       table structures within those images, extracts data from the tables, highlights the tables on the images, and saves the results in both visual (highlighted image) and structured (JSON) formats.
+•	The extracted table data is saved in JSON format. Each table contains A list of column names., A list of rows, where each row contains cell values from the table.
